@@ -91,7 +91,7 @@ pub struct ShipController {
 
 pub struct TeamController {
     vm: WasmVm,
-    ship_controllers: HashMap<ShipHandle, ShipController>,
+    pub ship_controllers: HashMap<ShipHandle, ShipController>,
     next_id: u32,
     free_submemories: Vec<(u32, u32)>, // (index, base_address)
     environment: Environment,
